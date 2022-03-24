@@ -1,0 +1,9 @@
+<%- include('../partials/header') %>
+
+<main class="main" id="main">
+    <% data.forEach(item=>{ %>
+        <p class="game-title"><%= item.id %>: <a href="/games/<%=item.id %>"><%= item.name %></a></p>
+    <% }) %> 
+</main>
+
+<%- include('../partials/footer') %> 
